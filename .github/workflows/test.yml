@@ -22,6 +22,9 @@ jobs:
       - name: Build Project
         run: npm run build
 
+      - name: Copy for 404.html
+        run: cp dist/index.html dist/404.html
+
       - name: publish gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
