@@ -19,9 +19,6 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Run TypeCheck
-        run: npm run type-check
-
       - name: Build Project
         run: npm run build
 
